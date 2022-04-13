@@ -12,8 +12,8 @@ From GitHub Actions, the JS script converts the JSON content to HTML chunks and 
 - once the linter passes with no errors, use `actions/github-script` to execute our script `build-posts-script.js`.
 - again, using `github/super-linter` - but to validate our HTML file as our JS script made changes to it.
 - lastly, execute multiple `git` commands to push the changed HTML file to our deploy branch, `gh-pages`:
-  - post data is up-to-date on the `main` branch, so our prior `actions/checkout` checked out `main` - meaning our change executed by the JS script was done on the main branch.
-  - since we want to push this change to our deploy branch, we stash the change and pop it after checking out the `gh-pages` branch.
+  - post data is up-to-date on the `main` branch and we want to utilize the version of `index.html` there too, so our prior `actions/checkout` step checked out `main` - meaning our change executed by the JS script was done on the `main` branch.
+  - since we want to push this change to our deploy branch, we stash the change and pop it after checking out the `gh-pages` branch and then `index.html` from `main`.
   - from there, we add, commit, and push the change to the remote branch.
 
 ## JS Script `build-posts-script.js`
