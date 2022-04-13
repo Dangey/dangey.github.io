@@ -30,12 +30,12 @@ From GitHub Actions, the JS script converts the JSON content to HTML chunks and 
   - write `index.html` file replacing existing one with a new file including the posts content HTML.
 
 ## Sample JSON config for post
-##### Line breaks are indicated by `//n` where they are replaced with `<br>` to format a single line break
+##### Line breaks are indicated by `\\n` where they are replaced with `<br>` to format a single line break
 ```
 {
   "post": true,
   "date": "April 1st, 2022",
   "title": "Act 1: Chapter 1",
-  "body": "It all began some time ago. . .//n//n And now it is over -FIN-"
+  "body": "It all began some time ago. . .\\n\\n And now it is over -FIN-"
 }
 ```
