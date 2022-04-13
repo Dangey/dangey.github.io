@@ -34,7 +34,7 @@ From GitHub Actions, the JS script converts the JSON content to HTML chunks and 
 ```
 {
   "post": true,
-  "date": "April 1st, 2022"
+  "date": "April 1st, 2022",
   "title": "Act 1: Chapter 1",
   "body": "It all began some time ago. . .//n//n And now it is over -FIN-"
 }
