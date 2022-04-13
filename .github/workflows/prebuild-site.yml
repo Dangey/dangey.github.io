@@ -46,7 +46,7 @@ jobs:
           git config --global user.email ${{ env.email }}
           git config --global user.name ${{ env.user }}
           git stash
-          git checkout gh
+          git checkout gh-pages
           git stash pop
           git add .
           git commit -m "add posts"
