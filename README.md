@@ -19,12 +19,12 @@ From GitHub Actions, the JS script converts the JSON content to HTML chunks and 
 ## JS Script `build-posts-script.js`
 - uses `fs` module to read/write file content.
 - flow:
-  - lists out files of `posts/` directory
+  - lists out files of `posts/` directory.
   - iterate over all files in directory, for each file:
     - reading in the file content
     - parsing that read-in JSON
     - generating a string of HTML from the file content
     - appending string to single string variable
-  - once for-loop completes, read in content from existing HTML file
-  - replace new HTML content with placeholder comment `<!--POSTS-->` in existing file
+  - once for-loop completes, read in content from existing HTML file.
+  - replace new HTML content with placeholder comment `<!--POSTS-->` in existing file content.
   - write `index.html` file replacing existing one with a new file including the posts content HTML.
