@@ -23,22 +23,20 @@ async function readFile (path) {
 }
 
 function convertToHTML (data) {
-  //const divID = "leftcolumn";
   const p = JSON.parse(data);
-  //console.log(p);
+  const post = p.post;
+  if (!post) return "";
+  
   const title = p.title;
-  //console.log(title);
   const date = p.date;
-  //console.log(date);
   const body = (p.body).replace(/\\n/g, '<br>');
-  //console.log(body);
+
   const post = `<div class="card">` +
     `<h2>${title}</h2>` +
     `<h5>${date}</h5>` +
     `<p>${body}</p>` +
     `</div>`;
 
-  //console.log(post);
   return post;
 }
 
