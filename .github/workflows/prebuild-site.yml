@@ -48,7 +48,7 @@ jobs:
           git stash
           git checkout gh-pages
           git stash pop
-          git add .
+          git add index.html
           git commit -m "add posts"
           git status -v
           git push origin
