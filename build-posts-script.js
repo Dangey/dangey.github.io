@@ -24,8 +24,8 @@ async function readFile (path) {
 
 function convertToHTML (data) {
   const p = JSON.parse(data);
-  const post = p.post;
-  if (!post) return "";
+  const willPost = p.post;
+  if (!willPost) return "";
   
   const title = p.title;
   const date = p.date;
