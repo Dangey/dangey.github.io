@@ -28,3 +28,14 @@ From GitHub Actions, the JS script converts the JSON content to HTML chunks and 
   - once for-loop completes, read in content from existing HTML file.
   - replace new HTML content with placeholder comment `<!--POSTS-->` in existing file content.
   - write `index.html` file replacing existing one with a new file including the posts content HTML.
+
+## Sample JSON config for post
+##### Line breaks are indicated by `//n` where they are replaced with `<br>` to format a single line break
+```
+{
+  "post": true,
+  "date": "April 1st, 2022"
+  "title": "Act 1: Chapter 1",
+  "body": "It all began some time ago. . .//n//n And now it is over -FIN-"
+}
+```
